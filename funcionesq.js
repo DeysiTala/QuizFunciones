@@ -80,3 +80,48 @@ function invertir(S) {
 }
 
 console.log(invertir("roma"));
+
+//Ejercicio 3
+
+/*for (var x=0;x<A.length;x++){
+      console.log(A[x] + " ");
+   var resultado = console.log(A.toString().split(""));
+}*/
+//var texto = "abcadefaghia";
+var A=["murcielago", "pato","caballo", "zebra"];
+function letrasRepetidas(){
+
+var palabras = A.join("");
+var contar = 0;
+var iniciar = 0;
+while ((iniciar = palabras.indexOf("a", iniciar) + 1) > 0) {
+    contar++;
+}
+console.log(contar);
+
+}
+letrasRepetidas(A);
+
+//ejercicio 6
+
+
+var  A=["ojo","mouse","lapiz"];
+
+function contadorDeVocales(A){
+
+ var contador = 0;
+var palabras = A.join("");
+
+
+
+  for(var x =0; x < palabras.length;x++)
+{
+  if ((palabras.charAt(x)=='a') || (palabras.charAt(x)=='e') || (palabras.charAt(x)=='i') || (palabras.charAt(x)=='o') || (palabras.charAt(x)=='u'))
+  {
+    contador++;
+  }
+}
+
+ console.log(contador);
+}
+contadorDeVocales(A);
